@@ -10,6 +10,7 @@ namespace KomodoRepository
     public class DeveloperRepository
     {
         public List<Developer> _devTeam = new List<Developer>();
+       
 
         //create
         public bool AddDevToTeam(Developer dev)
@@ -49,6 +50,7 @@ namespace KomodoRepository
 
         }
 
+        
 
         //delete
         public bool RemoveDevFromTeam(string id)

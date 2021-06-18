@@ -18,7 +18,6 @@ namespace Program.UI
             Menu();
         }
 
-
         private void Menu()
         {
             bool keepRunning = true;
@@ -34,7 +33,8 @@ namespace Program.UI
                 "7. Make new dev team\n" +
                 "8. Delete dev\n" +
                 "9. Delete dev team\n" +
-                "10. Exit");
+                "10. Monthly Check\n" +
+                "11. Exit");
 
                 string input = Console.ReadLine();
 
@@ -59,7 +59,7 @@ namespace Program.UI
                     case "5":
                         RemoveDevFromTeam();
                         break;
-                        
+
                     case "6":
                         MakeDevProfile();
                         break;
@@ -76,7 +76,10 @@ namespace Program.UI
                         RemoveDevTeam();
                         break;
 
-                    case "10":                        
+                    case "10":
+                        MonthlyCheck();
+                        break;
+                    case "11":
                         Console.WriteLine("Goodbye!");
                         keepRunning = false;
                         break;
@@ -97,8 +100,6 @@ namespace Program.UI
 
         }
 
-
-        
         private void ViewDevTeams()
         {
             Console.Clear();
@@ -112,7 +113,6 @@ namespace Program.UI
             }
         }
 
-        
         private void DisplayDevDirectory()
         {
             Console.Clear();
@@ -128,7 +128,6 @@ namespace Program.UI
             }
         }
 
-        
         private bool MakeDevProfile()
         {
             Console.Clear();
@@ -138,15 +137,15 @@ namespace Program.UI
             Console.WriteLine("Enter the first name of the developer:");
             newDev.FirstName = Console.ReadLine();
 
-            
+
             Console.WriteLine("Enter the last name of the developer:");
             newDev.LastName = Console.ReadLine();
 
-            
+
             Console.WriteLine("What is the developers ID number:");
             newDev.Id = Console.ReadLine();
 
-            
+
             Console.WriteLine("Does the developer have access to Pluralsight (yes or no):");
             string pluralsightAccess = Console.ReadLine().ToLower();
 
@@ -171,10 +170,9 @@ namespace Program.UI
                 Console.WriteLine("Failed to create!");
                 return false;
             }
-            
+
         }
 
-        
         private bool AddDevToATeam()
         {
             Console.Clear();
@@ -204,7 +202,6 @@ namespace Program.UI
             }
         }
 
-        
         public void RemoveDevTeam()
         {
             ViewDevTeams();
@@ -224,8 +221,6 @@ namespace Program.UI
             }
         }
 
-
-        
         public void DeleteDev()
         {
             DisplayDevDirectory();
@@ -245,7 +240,6 @@ namespace Program.UI
             }
         }
 
-        
         public bool MakeDevTeam()
         {
             Console.Clear();
@@ -271,7 +265,6 @@ namespace Program.UI
             }
         }
 
-        
         public void ViewDevsOnTeam()
         {
             Console.Clear();
@@ -290,7 +283,7 @@ namespace Program.UI
                     $"ID: {devs.Id}\n" +
                     $"Access To Puralsight: {devs.AccessToPluralsight}\n");
             }
-        }       
+        }
 
         public void RemoveDevFromTeam()
         {
@@ -317,13 +310,33 @@ namespace Program.UI
             }
         }
 
+        //Runs but couldnt get to print more than one dev
+        public bool MonthlyCheck()
+        {
+            Console.Clear();
+
+            Console.WriteLine("These devIDs need Pluralsight access\n");
+
+
+            foreach (var dev in _devDirect._devTeam)
+            {
+                if (dev.AccessToPluralsight == false)
+                {
+                    Console.WriteLine(dev.Id);
+
+                    return true;
+                }
+
+            }
+            return false;
+
+        }
 
         //seed
-
         private void SeedDevList()
         {
-            Developer dev1 = new Developer("Jack", "Jog", "32", true);
-            Developer dev2 = new Developer("Tim", "Meat", "33", false);
+            Developer dev1 = new Developer("Jack", "Jog", "32", false);
+            Developer dev2 = new Developer("Tim", "Meat", "33", true);
             Developer dev3 = new Developer("Susan", "Johnson", "34", false);
             Developer dev4 = new Developer("Hilary", "Bast", "35", true);
 

@@ -9,7 +9,7 @@ namespace KomodoPOCO
     public class Developer
     {
         public string FirstName { get; set; }
-        public String LastName { get; set; }
+        public string LastName { get; set; }
         public string Id { get; set; }
         public bool AccessToPluralsight { get; set; }
 
