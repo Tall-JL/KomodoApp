@@ -1,0 +1,9 @@
+C:\Users\bigja\source\repos\KomodoApplication\KomodoRepository\obj\Debug\KomodoRepository.csproj.AssemblyReference.cache
+C:\Users\bigja\source\repos\KomodoApplication\KomodoRepository\obj\Debug\KomodoRepository.csproj.CoreCompileInputs.cache
+C:\Users\bigja\source\repos\KomodoApplication\KomodoRepository\bin\Debug\KomodoRepository.dll
+C:\Users\bigja\source\repos\KomodoApplication\KomodoRepository\bin\Debug\KomodoRepository.pdb
+C:\Users\bigja\source\repos\KomodoApplication\KomodoRepository\bin\Debug\KomodoPOCO.dll
+C:\Users\bigja\source\repos\KomodoApplication\KomodoRepository\bin\Debug\KomodoPOCO.pdb
+C:\Users\bigja\source\repos\KomodoApplication\KomodoRepository\obj\Debug\KomodoRepository.csproj.CopyComplete
+C:\Users\bigja\source\repos\KomodoApplication\KomodoRepository\obj\Debug\KomodoRepository.dll
+C:\Users\bigja\source\repos\KomodoApplication\KomodoRepository\obj\Debug\KomodoRepository.pdb

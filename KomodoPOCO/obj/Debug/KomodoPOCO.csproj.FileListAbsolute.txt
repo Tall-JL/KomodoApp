@@ -1,0 +1,6 @@
+C:\Users\bigja\source\repos\KomodoApplication\KomodoPOCO\bin\Debug\KomodoPOCO.dll
+C:\Users\bigja\source\repos\KomodoApplication\KomodoPOCO\bin\Debug\KomodoPOCO.pdb
+C:\Users\bigja\source\repos\KomodoApplication\KomodoPOCO\obj\Debug\KomodoPOCO.csproj.AssemblyReference.cache
+C:\Users\bigja\source\repos\KomodoApplication\KomodoPOCO\obj\Debug\KomodoPOCO.csproj.CoreCompileInputs.cache
+C:\Users\bigja\source\repos\KomodoApplication\KomodoPOCO\obj\Debug\KomodoPOCO.dll
+C:\Users\bigja\source\repos\KomodoApplication\KomodoPOCO\obj\Debug\KomodoPOCO.pdb
